@@ -11,7 +11,7 @@ class Member
     {
         $this->idMember = $newIdMember;
     }
-    public function calculateAge($birthdate): int
+    protected function calculateAge($birthdate): int
     {
         $current_date = date('Y-m-d');
         $birth_date_obj = new DateTime($birthdate);
